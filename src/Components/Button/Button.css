@@ -1,0 +1,81 @@
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    background: #339af0;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px 10px;
+    min-width: 180px;
+    width: fit-content;
+    height: 40px;
+    transition: 0.2s;
+    box-shadow: 0px 2px 2px 0px rgba(31, 20, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(31, 20, 0, 0.25);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(31, 20, 0, 0.25);
+}
+
+.btn svg {
+    margin: 0 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #5BA2D9FF;
+    box-shadow: 0px 4px 4px 0px rgba(31, 20, 0, 0.30);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(31, 20, 0, 0.30);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(31, 20, 0, 0.30);
+}
+
+.btn:active, .btn:focus {
+    outline: none;
+}
+
+.btn.secondary {
+    background: #000;
+}
+
+.btn.secondary:hover {
+    background: #1F1F1FFF;
+}
+
+.btn.tertiary {
+    color: #333;
+    background: #ffffff;
+
+}
+
+.btn.tertiary:hover {
+    background: #fcfcfc;
+}
+
+.btn.iconBtn {
+    min-width: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: transparent;
+    color: #000;
+}
+
+.btn.iconBtn svg {
+    margin: 0 auto;
+}
+
+.btn.iconBtn:hover {
+    color: #000;
+    background: #fcfcfc;
+}
+
+.btn:disabled {
+    background: #eeeeee;
+    color: #aaaaaa;
+    box-shadow: none;
+}
+
+.btn:disabled:hover {
+    cursor: default;
+    background: #eeeeee;
+    color: #aaaaaa;
+    box-shadow: none;
+}

@@ -1,0 +1,27 @@
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
+import {Button} from "./Button";
+
+<Meta title="Atom/Button" component={Button}/>
+
+export const Template = (
+    {
+        disabled,
+        icon,
+        isActionBtn,
+        label, onClick,
+        secondary,
+        tertiary,
+    }) => <Button
+    secondary={secondary}
+    tertiary={tertiary}
+    disabled={disabled}
+    isActionBtn={isActionBtn}
+    icon={icon}
+    label={label}
+    onClick={onClick}/>
+
+<Canvas>
+    <Story name="Primary" args={{label:"Primary"}}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
