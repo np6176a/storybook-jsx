@@ -1,7 +1,10 @@
-import {Meta, Story, Canvas} from '@storybook/addon-docs';
+import {Meta, Story, Canvas, ArgsTable} from '@storybook/addon-docs';
 import {Button} from "./Button";
 
-<Meta title="Atom/Button" component={Button}/>
+<Meta
+    title="Atom/Button"
+    component={Button}
+/>
 
 export const Template = (
     {
@@ -20,8 +23,11 @@ export const Template = (
     label={label}
     onClick={onClick}/>
 
+This is  a primary button.
 <Canvas>
     <Story name="Primary" args={{label:"Primary"}}>
         {Template.bind({})}
     </Story>
 </Canvas>
+
+<ArgsTable of={Button}/>
